@@ -1,5 +1,5 @@
 package gojava.hw3.musicshop;
 
 
-public class MusicInstrument {
+public abstract class MusicInstrument {
 }

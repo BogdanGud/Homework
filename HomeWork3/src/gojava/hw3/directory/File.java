@@ -1,5 +1,5 @@
 package gojava.hw3.directory;
 
 
-public class File {
+public abstract class File {
 }
