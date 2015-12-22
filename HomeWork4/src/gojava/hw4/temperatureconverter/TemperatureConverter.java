@@ -1,4 +1,4 @@
-package gojava.hw4.converttemp;
+package gojava.hw4.temperatureconverter;
 
 
 public class TemperatureConverter {
