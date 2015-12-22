@@ -1,0 +1,6 @@
+﻿
+Ignore files *.iml
+*.iml
+
+## Directory-based project format:
+.idea/
