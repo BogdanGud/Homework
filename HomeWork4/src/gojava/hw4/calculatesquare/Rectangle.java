@@ -1,7 +1,7 @@
 package gojava.hw4.calculatesquare;
 
 
-public class Rectangle extends Shape {
+public class Rectangle implements Squarable {
     private double sideA;
     private double sideB;
 

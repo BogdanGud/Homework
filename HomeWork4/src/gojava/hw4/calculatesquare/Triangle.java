@@ -1,7 +1,7 @@
 package gojava.hw4.calculatesquare;
 
 
-public class Triangle extends Shape {
+public class Triangle implements Squarable {
     private double side;
     private double height;
 

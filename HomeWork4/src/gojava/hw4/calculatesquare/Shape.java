@@ -1,7 +1,7 @@
 package gojava.hw4.calculatesquare;
 
 
-public abstract class Shape {
+interface  Squarable {
 
-    public abstract double calculateSquare();
+    public  double calculateSquare();
 }

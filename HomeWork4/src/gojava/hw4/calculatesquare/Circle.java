@@ -1,7 +1,7 @@
 package gojava.hw4.calculatesquare;
 
 
-public class Circle extends Shape {
+public class Circle implements Squarable {
 
     private double radius;
     private final double pi;
