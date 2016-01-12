@@ -1,11 +1,13 @@
 package gojava.hw5.sortingarray;
 
 
+import java.util.Arrays;
+
 public class SortingArray {
     public static void main(String[] args) {
         int[] array = {5, -27, 34, 67, 0, 123, 63, 6, 89, 6, 43};
         int[] sortedArray = bobbleSort(array);
-        printArray(sortedArray);
+        System.out.println(Arrays.toString(sortedArray));;
 
     }
 
@@ -23,9 +25,4 @@ public class SortingArray {
         return array;
     }
 
-    public static void printArray(int[] array) {
-        for (int elem : array) {
-            System.out.print(elem + " ");
-        }
-    }
 }
