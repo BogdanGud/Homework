@@ -11,5 +11,8 @@ public class Main {
         } catch (notEnoughMoneyException e) {
             System.out.println(e.getMessage());
         }
+        catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
     }
 }
