@@ -10,19 +10,13 @@ public class MusicShop {
         this.musInstrArrayList = new ArrayList<MusicInstrument>();
     }
 
-
     public void saleInstrument(Customer customer,MusicInstrument instrument ) throws notEnoughMoneyException {
-        if(customer.getAccountBalance()>= instrument.price){
+        if(customer.getAccountBalance()>= instrument.getPrice())    //changed condition: using Getter
+        {
             System.out.println("Instrument bought");
         }
         else {
             throw new notEnoughMoneyException("Not enough money in account!");
         }
-
-
     }
-
-
-
-
 }

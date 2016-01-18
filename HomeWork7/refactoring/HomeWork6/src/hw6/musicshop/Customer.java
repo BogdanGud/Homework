@@ -2,8 +2,8 @@ package hw6.musicshop;
 
 
 public class Customer {
-    String name;
-    int accountBalance;
+    private String name;        //declared as private
+    private int accountBalance; //declared as private
 
     public Customer(String name, int accountBalance) {
         this.name = name;

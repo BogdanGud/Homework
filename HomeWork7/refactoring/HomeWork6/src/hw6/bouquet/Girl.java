@@ -2,8 +2,8 @@ package hw6.bouquet;
 
 
 public class Girl {
-    String name;
-    boolean isGoodMood;
+    private String name;        //declared as private
+    private boolean isGoodMood; //declared as private
 
     public Girl(String name, boolean isGoodMood) {
         this.name = name;
@@ -18,11 +18,13 @@ public class Girl {
         this.name = name;
     }
 
-    public boolean isGoodMood() {
+    //renamed method
+    public boolean getIsGoodMood() {
         return isGoodMood;
     }
 
-    public void setGoodMood(boolean goodMood) {
-        isGoodMood = goodMood;
+    //renamed and changed method
+    public void setMood(boolean Mood) {
+        isGoodMood = Mood;
     }
 }

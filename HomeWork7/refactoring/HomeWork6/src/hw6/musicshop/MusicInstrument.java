@@ -2,7 +2,7 @@ package hw6.musicshop;
 
 
 public abstract class MusicInstrument {
-    int price;
+    private int price;      //declared as private
     public MusicInstrument(int price) {
         this.price = price;
     }

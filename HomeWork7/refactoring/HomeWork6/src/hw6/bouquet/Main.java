@@ -3,7 +3,7 @@ package hw6.bouquet;
 
 public class Main {
     public static void main(String[] args) {
-        Girl emma = new Girl("Emma", false);
+        Girl emma = new Girl("Emma", true);
         Bouquet bouquet = new Bouquet();
         try {
             bouquet.giveBouquet(emma, bouquet);
