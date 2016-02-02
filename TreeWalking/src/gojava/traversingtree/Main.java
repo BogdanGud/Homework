@@ -1,40 +1,26 @@
 package gojava.traversingtree;
 
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
+        TreeNode node10 = new TreeNode(null, null, 10);
+        TreeNode node4 = new TreeNode(node10, null, 4);
+        TreeNode node5 = new TreeNode(null, null, 5);
+        TreeNode node1 = new TreeNode(node4, node5, 1);
+        TreeNode node7 = new TreeNode(null, null, 7);
+        TreeNode node8 = new TreeNode(null, null, 8);
+        TreeNode node3 = new TreeNode(node7, node8, 3);
+        TreeNode node2 = new TreeNode(node1, node3, 2);
 
-        Tree tree2 = new Tree(2);
-        Tree tree1 = new Tree(1);
-        Tree tree3 = new Tree(3);
-        Tree tree4 = new Tree(4);
-        Tree tree5 = new Tree(5);
-        Tree tree7 = new Tree(7);
-        Tree tree8 = new Tree(8);
-        Tree tree10 = new Tree(10);
+        List<Integer> preorder = Traverser.preorderTravers(node2);
+        System.out.println("Preorder traversal: " + preorder.toString());
 
-        tree2.setLeft(tree1);
-        tree2.setRight(tree3);
+        List<Integer> postorder = Traverser.postorderTravers(node2);
+        System.out.println("Postorder traversal: " + postorder.toString());
 
-        tree1.setLeft(tree4);
-        tree1.setRight(tree5);
-
-        tree3.setLeft(tree7);
-        tree3.setRight(tree8);
-
-        tree4.setLeft(tree10);
-
-        System.out.println("Preorder traversal:");
-        Traverser.preorderTravers(tree2);
-        System.out.println();
-
-        System.out.println("Postorder traversal:");
-        Traverser.revertWalk(tree2);
-        System.out.println();
-
-        System.out.println("Summetrycal traversal:");
-        Traverser.symmetricWalk(tree2);
+        List<Integer> symmetrical = Traverser.symmetricTravers(node2);
+        System.out.println("Summetrycal traversal: " + symmetrical.toString());
     }
-
-
 }
