@@ -50,7 +50,7 @@ public class TraverserTest {
     }
 
     @org.junit.Test
-    public void testSymmetricWalk() throws Exception {
+    public void testSymmetricTravers() throws Exception {
         List<Integer> expectedKeys = new ArrayList<Integer>();
         List<Integer> actualKeys = Traverser.symmetricTravers(node2);
         expectedKeys.add(10);
@@ -66,7 +66,7 @@ public class TraverserTest {
     }
 
     @org.junit.Test
-    public void testPostOrderWalk() throws Exception {
+    public void testPostOrderTravers() throws Exception {
         List<Integer> expectedKeys = new ArrayList<Integer>();
         List<Integer> actualKeys = Traverser.postorderTravers(node2);
         expectedKeys.add(10);

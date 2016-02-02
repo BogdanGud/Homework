@@ -21,6 +21,6 @@ public class Main {
         System.out.println("Postorder traversal: " + postorder.toString());
 
         List<Integer> symmetrical = Traverser.symmetricTravers(node2);
-        System.out.println("Summetrycal traversal: " + symmetrical.toString());
+        System.out.println("Symmetrycal traversal: " + symmetrical.toString());
     }
 }
